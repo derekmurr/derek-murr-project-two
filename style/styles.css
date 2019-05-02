@@ -211,6 +211,7 @@ h6 {
 
 h1 {
   font-size: 7.25rem;
+  margin-top: 10vw;
 }
 
 h2 {
@@ -238,5 +239,72 @@ h4 {
   font-size: 1.27rem;
   line-height: 1.64;
   text-align: center;
+}
+
+.wrapper {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+header {
+  height: 45vw;
+  margin: 0;
+  padding: 50px 0 0;
+}
+
+.index-header {
+  background-image: url("../assets/home-header.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.blog-header {
+  background-image: url("../assets/blog-header.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.contact-header {
+  background-image: url("../assets/contact-header.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a {
+  padding: 8px 0;
+  margin: 10px 50px 0 0;
+}
+
+.main-nav a:hover, .main-nav a:focus, .main-nav a:active {
+  text-decoration: none;
+  border-bottom: 3px solid #f3faff;
+}
+
+.current-page {
+  border-bottom: 3px solid #08fded;
+}
+
+.header-flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=styles.css.map */
