@@ -1,0 +1,16 @@
+.whats-new-image-box {
+  position: absolute;
+  right: -5vw;
+  top: -200px;
+  width: 45%;
+}
+
+.whats-new-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.whats-new-article {
+  flex-basis: 47%;
+}

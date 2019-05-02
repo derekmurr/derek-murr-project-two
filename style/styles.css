@@ -211,12 +211,11 @@ h6 {
 
 h1 {
   font-size: 7.25rem;
-  margin-top: 10vw;
 }
 
 h2 {
-  font-size: 6rem;
-  line-height: 1;
+  font-size: 2.25rem;
+  line-height: 2.2;
 }
 
 h3 {
@@ -239,6 +238,12 @@ h4 {
   font-size: 1.27rem;
   line-height: 1.64;
   text-align: center;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
 }
 
 .wrapper {
@@ -306,5 +311,28 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.whats-new-image-box {
+  position: absolute;
+  right: -5vw;
+  top: -200px;
+  width: 45%;
+}
+
+.whats-new-flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.whats-new-article {
+  -ms-flex-preferred-size: 47%;
+      flex-basis: 47%;
 }
 /*# sourceMappingURL=styles.css.map */
