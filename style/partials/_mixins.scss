@@ -3,3 +3,16 @@
   background-position: center center;
   background-size: cover;
 }
+
+@mixin h2-icon($svg) {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  left: 7px;
+  top: 47px;
+  background-image: url($svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
