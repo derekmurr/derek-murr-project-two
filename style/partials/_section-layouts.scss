@@ -1,3 +1,5 @@
+// ====== WHAT'S NEW SECTION STARTS ======
+
 .whats-new-flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -40,6 +42,10 @@
   @include h2-icon("../assets/icon-get-in-touch.svg");
 }
 
+// ====== WHAT'S NEW SECTION ENDS ======
+
+// ====== ABOUT US SECTION STARTS ======
+
 .about-us-section {
   // position: relative;
   background: linear-gradient(to bottom, $deep-turquoise 4%, $french-blue 4%, $french-blue 96%,$deep-turquoise 96%);
@@ -47,16 +53,17 @@
 
 .about-us-flex-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
+  max-width: 2200px;
+  margin: 0 auto;
 }
 
 .about-us-article {
-  flex-basis: 40%;
-  flex-shrink: 1;
+  flex-basis: 50%;
+  flex-shrink: 2;
   flex-grow: 0;
   margin: auto;
-  padding: 20px;
+  padding: 20px 0;
   &:last-of-type {
     margin-bottom: 30px;
     text-align: right;
@@ -69,6 +76,7 @@
 .about-us-image {
   flex-basis: 40%;
   flex-shrink: 1;
+  flex-grow: 0;
   &:last-of-type {
     align-self: flex-end;
   }
@@ -77,37 +85,55 @@
 .about-us-image-left {
   box-shadow: 20px 20px 0px 0px $bright-aqua;
   left: 0;
+  margin-right: 10%;
 }
 
 .about-us-image-right {
   box-shadow: -20px 20px 0px 0px $bright-aqua;
   right: 0;
+  margin-left: 10%;
 }
+
+// ====== ABOUT US SECTION ENDS ======
+
+// ====== ROAD TRIPS SECTION STARTS ======
 
 .road-trips-flex-container {
   display: flex;
   flex-direction: column-reverse;
   & article {
-    padding: 40px 80px;
+    padding: 40px 0;
+    // max-width: 1100px;
     text-align: center;
   }
 }
 
+// ====== ROAD TRIPS SECTION ENDS ======
+// that was a disappointingly short road trip
+
+// ====== EVENTS SECTION STARTS ======
+
 .events-flex-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 50px 0;
 }
 
 .events-image {
   flex-basis: 25%;
   box-shadow: -20px 20px 0px 0px $bright-aqua;
+  //the image aligns with the wrapper on the shadow, not the image
+  margin-left: 20px;
 }
 
 .events-article {
-  flex-basis: 75%;
-  padding-left: 40px;
+  flex-basis: 65%;
 }
+
+// ====== EVENTS SECTION ENDS ======
+
+// ====== GALLERY SECTION STARTS ======
 
 .gallery-section {
   background-color: $french-blue;
@@ -122,10 +148,4 @@
   }
 }
 
-footer {
-  padding: 10px 0;
-  background-color: $darkish-blue;
-  & p {
-    margin: 0;
-  }
-}
+// ====== GALLERY SECTION ENDS ======
