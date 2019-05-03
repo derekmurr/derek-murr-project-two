@@ -54,22 +54,19 @@
 .about-us-flex-container {
   display: flex;
   justify-content: space-between;
+  // width: 100%;
   max-width: 2200px;
   margin: 0 auto;
 }
 
 .about-us-article {
-  flex-basis: 50%;
+  flex-basis: 35%;
   flex-shrink: 2;
   flex-grow: 0;
   margin: auto;
   padding: 20px 0;
-  &:last-of-type {
-    margin-bottom: 30px;
-    text-align: right;
-    & h3 {
-      margin-top: 0;
-    }
+  & h3 {
+    margin-top: 0;
   }
 }
 
@@ -77,21 +74,25 @@
   flex-basis: 40%;
   flex-shrink: 1;
   flex-grow: 0;
-  &:last-of-type {
-    align-self: flex-end;
-  }
 }
 
 .about-us-image-left {
   box-shadow: 20px 20px 0px 0px $bright-aqua;
+  align-self: flex-start;
   left: 0;
-  margin-right: 10%;
+  // margin-right: 10%;
 }
 
 .about-us-image-right {
   box-shadow: -20px 20px 0px 0px $bright-aqua;
   right: 0;
-  margin-left: 10%;
+  align-self: flex-end;
+  // margin-left: 10%;
+}
+
+.about-us-article-bottom {
+  margin: 40px auto;
+  text-align: right;
 }
 
 // ====== ABOUT US SECTION ENDS ======

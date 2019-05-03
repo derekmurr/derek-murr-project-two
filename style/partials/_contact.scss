@@ -34,8 +34,9 @@
 
 .contact-form {
   flex-basis: 70%;
-  position: relative;
-  top: -150px;
+  margin-top: -150px;
+  margin-bottom: 50px;
+  z-index: 10;
   background-color: $french-blue;
   box-shadow: 20px 20px 0px 0px $bright-aqua;
   padding: 80px 40px 20px;
@@ -67,25 +68,47 @@ button {
   -webkit-appearance: none;
   appearance: none;
   border: none;
-  background-color: $french-blue;
+  background-color: rgba(0,0,0,0);
+  color: $pale-grey;
+  padding: 10px 20px;
 }
 
 label {
   margin-left: 20px;
-  transform: translateY(10px);
+  // transform: translateY(5px);
 }
 
-.form-message-block label {
-  transform: translateY(50px);
+.form-input-block label {
+  transform: translateY(-70px);
+}
+
+.form-input-block input:focus + label {
+  transform: translateY(-100px);
+  color: $bright-aqua;
+}
+
+label[for="message"] {
+  transform: translateY(-250px);
+}
+
+.form-message-block textarea:focus + label {
+  transform: translateY(-300px);
+  color: $bright-aqua;
 }
 
 input {
   border-bottom: 1px solid $pale-grey;
   margin-bottom: 20px;
+  &:focus {
+    border-bottom: 1px solid $bright-aqua;
+  }
 }
 
 textarea {
   border: 1px solid $pale-grey;
+  &:focus {
+    border: 1px solid $bright-aqua;
+  }
 }
 
 button {
@@ -99,4 +122,15 @@ button {
 
   background-color: $bright-aqua;
   color: $french-blue;
+}
+
+button:hover,
+button:focus {
+  text-decoration: none;
+  color: $pale-grey;
+  background-color: $darkish-blue;
+}
+
+button:active {
+  color: $bright-aqua;
 }

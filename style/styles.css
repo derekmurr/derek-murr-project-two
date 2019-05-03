@@ -335,9 +335,15 @@ header {
 }
 
 .header-flex-container {
+  width: 100%;
+  max-width: 2200px;
+  margin: 0 auto;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -345,14 +351,19 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 100%;
 }
 
 .header-image-box {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   position: absolute;
-  right: 0;
-  width: 45rem;
-  bottom: 0;
+  bottom: 0px;
+  width: 40rem;
 }
 
 .whats-new-flex-container {
@@ -455,8 +466,8 @@ header {
 }
 
 .about-us-article {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
   -ms-flex-negative: 2;
       flex-shrink: 2;
   -webkit-box-flex: 0;
@@ -466,12 +477,7 @@ header {
   padding: 20px 0;
 }
 
-.about-us-article:last-of-type {
-  margin-bottom: 30px;
-  text-align: right;
-}
-
-.about-us-article:last-of-type h3 {
+.about-us-article h3 {
   margin-top: 0;
 }
 
@@ -485,23 +491,25 @@ header {
           flex-grow: 0;
 }
 
-.about-us-image:last-of-type {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-}
-
 .about-us-image-left {
   -webkit-box-shadow: 20px 20px 0px 0px #08fded;
           box-shadow: 20px 20px 0px 0px #08fded;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   left: 0;
-  margin-right: 10%;
 }
 
 .about-us-image-right {
   -webkit-box-shadow: -20px 20px 0px 0px #08fded;
           box-shadow: -20px 20px 0px 0px #08fded;
   right: 0;
-  margin-left: 10%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.about-us-article-bottom {
+  margin: 40px auto;
+  text-align: right;
 }
 
 .road-trips-flex-container {
@@ -611,8 +619,9 @@ header {
 .contact-form {
   -ms-flex-preferred-size: 70%;
       flex-basis: 70%;
-  position: relative;
-  top: -150px;
+  margin-top: -150px;
+  margin-bottom: 50px;
+  z-index: 10;
   background-color: #474bb5;
   -webkit-box-shadow: 20px 20px 0px 0px #08fded;
           box-shadow: 20px 20px 0px 0px #08fded;
@@ -652,18 +661,35 @@ button {
   -webkit-appearance: none;
   appearance: none;
   border: none;
-  background-color: #474bb5;
+  background-color: rgba(0, 0, 0, 0);
+  color: #f3faff;
+  padding: 10px 20px;
 }
 
 label {
   margin-left: 20px;
-  -webkit-transform: translateY(10px);
-          transform: translateY(10px);
 }
 
-.form-message-block label {
-  -webkit-transform: translateY(50px);
-          transform: translateY(50px);
+.form-input-block label {
+  -webkit-transform: translateY(-70px);
+          transform: translateY(-70px);
+}
+
+.form-input-block input:focus + label {
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+  color: #08fded;
+}
+
+label[for="message"] {
+  -webkit-transform: translateY(-250px);
+          transform: translateY(-250px);
+}
+
+.form-message-block textarea:focus + label {
+  -webkit-transform: translateY(-300px);
+          transform: translateY(-300px);
+  color: #08fded;
 }
 
 input {
@@ -671,8 +697,16 @@ input {
   margin-bottom: 20px;
 }
 
+input:focus {
+  border-bottom: 1px solid #08fded;
+}
+
 textarea {
   border: 1px solid #f3faff;
+}
+
+textarea:focus {
+  border: 1px solid #08fded;
 }
 
 button {
@@ -684,5 +718,16 @@ button {
   text-align: center;
   background-color: #08fded;
   color: #474bb5;
+}
+
+button:hover,
+button:focus {
+  text-decoration: none;
+  color: #f3faff;
+  background-color: #044779;
+}
+
+button:active {
+  color: #08fded;
 }
 /*# sourceMappingURL=styles.css.map */

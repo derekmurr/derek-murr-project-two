@@ -45,15 +45,21 @@ header {
 }
 
 .header-flex-container {
+  width: 100%;
+  max-width: 2200px;
+  margin: 0 auto;
+  height: 100%;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
 }
 
 .header-image-box {
+  flex-basis: 100%;
+  align-self: flex-end;
+  justify-content: flex-end;
   position: absolute;
-  right: 0;
-  width: 45rem;
-  bottom: 0;
+  bottom: 0px;
+  width: 40rem;
 }
