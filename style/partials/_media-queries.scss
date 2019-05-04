@@ -1,0 +1,36 @@
+@media (max-width: 950px) {
+  .form-input-block {
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 5.6rem;
+    line-height: 1.1;
+    margin-top: 5rem;
+  }
+
+  .contact-flex-container {
+    flex-wrap: wrap;
+  }
+
+  .contact-info-block {
+    flex-basis: 100%;
+    text-align: center;
+    flex-shrink: 0;
+  }
+
+  .social-nav ul {
+    justify-content: center;
+    & li {
+      margin-left: 20px;
+    }
+  }
+
+  .contact-form {
+    flex-basis: 100%;
+    margin-top: 4rem;
+    box-shadow: 10px 10px 0 0 $bright-aqua;
+  }
+}
