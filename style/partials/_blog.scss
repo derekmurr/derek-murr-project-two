@@ -1,0 +1,87 @@
+.blog-section {
+  padding-top: 5rem;
+}
+
+.blog-flex-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 2200px;
+  margin: 0 auto;
+}
+
+.blog-aside {
+  flex-basis: 30%;
+}
+
+.blog-main {
+  flex-basis: 60%;
+  margin-top: -15rem;
+  z-index: 10;
+}
+
+.blog-post {
+  border-left: 2px solid $bright-aqua;
+  border-bottom: 2px solid $bright-aqua;
+}
+
+.blog-post,
+.blog-comments {
+  padding: 2rem 5rem 8rem;
+}
+
+.blog-image {
+  box-shadow: -20px 20px 0px 0px $bright-aqua;
+  margin-left: 20px;
+}
+
+.comment-wrap {
+  display: flex;
+  margin-bottom: 4rem;
+}
+
+.comment-avatar {
+  flex-basis: 6rem;
+  margin-right: 2rem;
+  flex-shrink: 0;
+}
+
+.blog-aside {
+  align-self: flex-start;
+  background-color: $french-blue;
+  -webkit-box-shadow: inset 5rem 0 0 0 $deep-turquoise;
+  -moz-box-shadow: inset 5rem 0 0 0 $deep-turquoise;
+  box-shadow: inset 5rem 0 0 0 $deep-turquoise;
+  border-right: 1.5rem solid $french-blue;
+}
+
+.blog-aside-content {
+  padding: 1.5rem 0 1.5rem 6.5rem;
+  & h4 {
+    margin: 2.8rem 0 0;
+    line-height: 1.2; 
+  }
+}
+
+.blog-side-image {
+  margin-top: -2.5rem;
+}
+
+.blog-recent-posts {
+  list-style: none;
+  padding: 0;
+}
+
+.blog-recent-posts li {
+  margin: .4rem 0 0 1em;
+  text-indent: -1em;
+  &:first-of-type {
+    margin-top: 0;
+  }
+  &::before {
+    content: "•";
+    color: $bright-aqua;
+    font-size: .95em;
+    margin-right: 0.6em;
+    // margin-left: .5em;
+  }
+}

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block;
 }
@@ -224,6 +225,13 @@ h2 + p {
   margin-top: 0;
 }
 
+.blog-h2 {
+  font-size: 4.2rem;
+  line-height: 0.8;
+  margin-top: 3.6rem;
+  margin-bottom: 2.1rem;
+}
+
 h3 {
   font-size: 2.25rem;
   line-height: 2.2;
@@ -237,6 +245,18 @@ h3 + p {
 h4 {
   font-size: 2rem;
   line-height: 1.45;
+}
+
+h5 {
+  font-family: "Roboto", arial, sans-serif;
+  font-size: 1.4rem;
+  font-style: italic;
+  font-weight: 700;
+  margin: 0;
+}
+
+h5 + p {
+  margin-top: 0.5rem;
 }
 
 .navigation {
@@ -616,16 +636,118 @@ header {
   color: #f3faff;
 }
 
-.contact-form {
-  -ms-flex-preferred-size: 70%;
-      flex-basis: 70%;
-  margin-top: -150px;
-  margin-bottom: 50px;
+.social-link:hover,
+.social-link:focus {
+  color: #08fded;
+}
+
+.social-link:active {
+  color: #474bb5;
+}
+
+.blog-section {
+  padding-top: 5rem;
+}
+
+.blog-flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 2200px;
+  margin: 0 auto;
+}
+
+.blog-aside {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
+.blog-main {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  margin-top: -15rem;
   z-index: 10;
+}
+
+.blog-post {
+  border-left: 2px solid #08fded;
+  border-bottom: 2px solid #08fded;
+}
+
+.blog-post,
+.blog-comments {
+  padding: 2rem 5rem 8rem;
+}
+
+.blog-image {
+  -webkit-box-shadow: -20px 20px 0px 0px #08fded;
+          box-shadow: -20px 20px 0px 0px #08fded;
+  margin-left: 20px;
+}
+
+.comment-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 4rem;
+}
+
+.comment-avatar {
+  -ms-flex-preferred-size: 6rem;
+      flex-basis: 6rem;
+  margin-right: 2rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.blog-aside {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   background-color: #474bb5;
-  -webkit-box-shadow: 20px 20px 0px 0px #08fded;
-          box-shadow: 20px 20px 0px 0px #08fded;
-  padding: 80px 40px 20px;
+  -webkit-box-shadow: inset 5rem 0 0 0 #03697c;
+  box-shadow: inset 5rem 0 0 0 #03697c;
+  border-right: 1.5rem solid #474bb5;
+}
+
+.blog-aside-content {
+  padding: 1.5rem 0 1.5rem 6.5rem;
+}
+
+.blog-aside-content h4 {
+  margin: 2.8rem 0 0;
+  line-height: 1.2;
+}
+
+.blog-side-image {
+  margin-top: -2.5rem;
+}
+
+.blog-recent-posts {
+  list-style: none;
+  padding: 0;
+}
+
+.blog-recent-posts li {
+  margin: .4rem 0 0 1em;
+  text-indent: -1em;
+}
+
+.blog-recent-posts li:first-of-type {
+  margin-top: 0;
+}
+
+.blog-recent-posts li::before {
+  content: "•";
+  color: #08fded;
+  font-size: .95em;
+  margin-right: 0.6em;
+}
+
+.contact-form,
+.blog-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -634,6 +756,18 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.contact-form {
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  margin-top: -150px;
+  margin-bottom: 50px;
+  padding: 80px 40px 20px;
+  z-index: 10;
+  background-color: #474bb5;
+  -webkit-box-shadow: 20px 20px 0px 0px #08fded;
+          box-shadow: 20px 20px 0px 0px #08fded;
 }
 
 .form-input-block {
@@ -668,6 +802,8 @@ button {
 
 label {
   margin-left: 20px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .form-input-block label {
@@ -679,6 +815,11 @@ label {
   -webkit-transform: translateY(-100px);
           transform: translateY(-100px);
   color: #08fded;
+}
+
+.form-input-block input:valid + label,
+.form-message-block textarea:valid + label {
+  opacity: 0;
 }
 
 label[for="message"] {
@@ -709,7 +850,7 @@ textarea:focus {
   border: 1px solid #08fded;
 }
 
-button {
+.form-submit-button {
   padding: 5px 10px;
   margin: 20px 0 30px;
   font-family: "Walter Turncoat", Arial, sans-serif;
@@ -720,14 +861,14 @@ button {
   color: #474bb5;
 }
 
-button:hover,
-button:focus {
+.form-submit-button:hover,
+.form-submit-button:focus {
   text-decoration: none;
   color: #f3faff;
   background-color: #044779;
 }
 
-button:active {
+.form-submit-button:active {
   color: #08fded;
 }
 /*# sourceMappingURL=styles.css.map */
