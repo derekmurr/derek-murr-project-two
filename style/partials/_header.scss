@@ -8,8 +8,6 @@ header {
   height: 55rem;
   padding-bottom: 15rem;
   @include header-background("../assets/home-header.jpg");
-  -webkit-box-shadow: inset 0px -10vw 0px 0px $deep-turquoise;
-  -moz-box-shadow: inset 0px -10vw 0px 0px $deep-turquoise;
   box-shadow: inset 0px -10vw 0px 0px $deep-turquoise;
 }
 
