@@ -117,6 +117,46 @@
   }
 }
 
+@media (max-width: 500px) {
+  .menu-icon {
+    display: block;
+    position: fixed;
+    width: 3rem;
+    top: 1rem;
+    right: 5%;
+    margin: 0;
+    font-size: 1.4rem;
+    text-align: right;
+  }
+
+  .navigation-toggle:checked ~ .main-nav {
+    right: 5%;
+  }
+
+  .main-nav {
+    position: fixed;
+    top: 4rem;
+    right: -30%;
+    transition: right 0.3s ease;
+  }
+
+  .main-nav ul {
+    display: inline-block;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: rgba(0,0,0,0.3);
+  }
+
+  .main-nav li {
+    padding: 1em;
+    text-align: center;
+  }
+
+  .main-nav a {
+    margin: 0;
+  }
+}
+
 @media (max-width: 450px) {
   .comment-wrap {
     flex-direction: column;

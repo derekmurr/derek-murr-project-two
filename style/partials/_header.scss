@@ -23,11 +23,23 @@ header {
   @include header-background("../assets/contact-header.jpg");
 }
 
+.main-nav {
+  z-index: 50;
+}
+
 .main-nav ul {
   list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
+}
+
+.navigation-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
 }
 
 .main-nav a {
