@@ -989,6 +989,20 @@ textarea:focus {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
+  .about-us-article-top {
+    margin-bottom: 1rem;
+  }
+  .about-us-article-bottom {
+    margin: 1rem 0 2rem;
+  }
+  .about-us-image-right {
+    -webkit-box-shadow: -10px 10px 0 0 #08fded;
+            box-shadow: -10px 10px 0 0 #08fded;
+  }
+  .about-us-image-left {
+    -webkit-box-shadow: 10px 10px 0 0 #08fded;
+            box-shadow: 10px 10px 0 0 #08fded;
+  }
   .form-input-block {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -996,6 +1010,36 @@ textarea:focus {
 }
 
 @media (max-width: 800px) {
+  .about-us-section {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #03697c), color-stop(4%, #474bb5), to(#474bb5));
+    background: linear-gradient(to bottom, #03697c 4%, #474bb5 4%, #474bb5 100%);
+  }
+  .about-us-grid-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .about-us-image-left {
+    position: static;
+    grid-column: 1 / -1;
+    margin: 0 auto;
+    width: 60%;
+  }
+  .about-us-image-right {
+    display: none;
+  }
+  .about-us-wrapper {
+    grid-column: 1 / -1;
+  }
+  .about-us-article {
+    width: 95%;
+    text-align: center;
+  }
+  .about-us-article-bottom,
+  .about-us-article-top {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
   .blog-side-image {
     display: none;
   }
@@ -1097,6 +1141,7 @@ textarea:focus {
     margin: 0;
     font-size: 1.4rem;
     text-align: right;
+    z-index: 999;
   }
   .navigation-toggle:checked ~ .main-nav {
     right: 5%;
@@ -1104,7 +1149,7 @@ textarea:focus {
   .main-nav {
     position: fixed;
     top: 4rem;
-    right: -30%;
+    right: -50%;
     -webkit-transition: right 0.3s ease;
     transition: right 0.3s ease;
   }
@@ -1117,7 +1162,7 @@ textarea:focus {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.7);
   }
   .main-nav li {
     padding: 1em;
