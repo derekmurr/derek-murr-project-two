@@ -1,3 +1,85 @@
+@media (max-width: 1024px) {
+  .blog-flex-container {
+    flex-direction: column;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .blog-main {
+    margin-top: 6rem;
+  }
+
+  .blog-aside {
+    border: none;
+    box-shadow: none;
+  }
+
+  .blog-aside-content {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5rem;
+    & div:first-of-type {
+      flex-grow: 1;
+      margin-right: 5rem;
+    }
+    & div:last-of-type {
+      flex-basis: 16rem;
+      flex-shrink: 0;
+    }
+  }
+
+  .blog-side-image {
+    width: 50%;
+    position: relative;
+    right: -45%;
+    top: -75%;
+    margin-bottom: -18rem;
+    z-index: 10;
+    box-shadow: -10px 10px 0 0 $bright-aqua;
+  }
+
+  .blog-image {
+    box-shadow: -10px 10px 0 0 $bright-aqua;
+    margin-left: 0;
+  }
+
+  .blog-post {
+    border: none;
+    padding: 0;
+  }
+
+  .blog-comments {
+    padding: 2rem 0 8rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .blog-side-image {
+    display: none;
+  }
+
+  .blog-aside {
+    margin-top: -10rem;
+    z-index: 10;
+  }
+
+  .blog-aside-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    & div:first-of-type {
+      margin-right: 0;
+    }
+    & h4 {
+      margin-top: 1rem;
+    }
+  }
+
+  .blog-h2 {
+    font-size: 2.8rem;
+  }
+}
+
 @media (max-width: 950px) {
   .form-input-block {
     flex-basis: 100%;
@@ -32,5 +114,12 @@
     flex-basis: 100%;
     margin-top: 4rem;
     box-shadow: 10px 10px 0 0 $bright-aqua;
+  }
+}
+
+@media (max-width: 450px) {
+  .comment-wrap {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
