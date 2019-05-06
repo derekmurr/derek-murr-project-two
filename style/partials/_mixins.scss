@@ -5,6 +5,7 @@
 }
 
 @mixin h2-icon($svg) {
+  //adds the round icons before subheads in the What's New section of index.html
   content: "";
   display: block;
   position: absolute;
@@ -17,6 +18,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   @if $svg == "../assets/icon-blog.svg" {
+    //the Blog icon is bigger than the rest, so we'll scale it down more
     background-size: 50%, 100%;
   } @else {
     background-size: 70%, 100%;

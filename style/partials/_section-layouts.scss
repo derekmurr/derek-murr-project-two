@@ -40,6 +40,8 @@
 
 .about-us-grid-container {
   display: grid;
+  //Section spans the viewport (up to a point); l and r columns contain images
+  //Center column has content and is same dimensions as site wrapper
   grid-template-columns: 1fr minmax(95%, 1200px) 1fr;
   position: relative;
   max-width: 2200px;
@@ -51,6 +53,7 @@
   flex-direction: column;
   grid-column: 2 / 3;
   margin: 0 auto;
+  width: 95%;
   max-width: 1200px;
 }
 
@@ -119,7 +122,7 @@
 .events-image {
   flex-basis: 25%;
   box-shadow: -20px 20px 0px 0px $bright-aqua;
-  //the image aligns with the wrapper on the shadow, not the image
+  //move the image over the same width as its shadow, so the container's border aligns with the shadow
   margin-left: 20px;
 }
 

@@ -152,15 +152,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   padding: 0;
 }
 
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: '';
-  clear: both;
-  height: 0;
-}
-
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -198,6 +189,10 @@ a {
 a:hover,
 a:focus {
   text-decoration: underline;
+}
+
+a:active {
+  color: #08fded;
 }
 
 h1,
@@ -274,6 +269,20 @@ h5 + p {
   text-align: center;
   background-color: #08fded;
   color: #474bb5;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.button:focus,
+.button:hover {
+  background-color: #044779;
+  color: #08fded;
+  text-decoration: none;
+}
+
+.button:active {
+  color: #f3faff;
+  text-decoration: none;
 }
 
 .center {
@@ -509,6 +518,7 @@ header {
   -ms-grid-column-span: 1;
   grid-column: 2 / 3;
   margin: 0 auto;
+  width: 95%;
   max-width: 1200px;
 }
 
@@ -657,6 +667,8 @@ header {
 .social-link {
   text-decoration: none;
   color: #f3faff;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .social-link:hover,
@@ -886,17 +898,19 @@ textarea:focus {
   text-align: center;
   background-color: #08fded;
   color: #474bb5;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .form-submit-button:hover,
 .form-submit-button:focus {
   text-decoration: none;
-  color: #f3faff;
+  color: #08fded;
   background-color: #044779;
 }
 
 .form-submit-button:active {
-  color: #08fded;
+  color: #f3faff;
 }
 
 @media (max-width: 1220px) {

@@ -32,6 +32,7 @@
 .social-link {
   text-decoration: none;
   color: $pale-grey;
+  transition: color 0.3s ease;
 }
 
 .social-link:hover,

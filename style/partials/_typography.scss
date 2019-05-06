@@ -18,6 +18,10 @@ a:focus {
   text-decoration: underline;
 }
 
+a:active {
+  color: $bright-aqua;
+}
+
 h1,
 h2,
 h3,
@@ -91,6 +95,20 @@ h5 {
 
   background-color: $bright-aqua;
   color: $french-blue;
+
+  transition: all 0.3s ease;
+}
+
+.button:focus,
+.button:hover {
+  background-color: $darkish-blue;
+  color: $bright-aqua;
+  text-decoration: none;
+}
+
+.button:active {
+  color: $pale-grey;
+  text-decoration: none;
 }
 
 .center {

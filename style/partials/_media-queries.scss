@@ -1,3 +1,5 @@
+//First few of these just tighten up the header so things don't collide
+
 @media (max-width: 1220px) {
   .index-header {
     height: 40rem;
@@ -15,6 +17,7 @@
 }
 
 @media (max-width: 1024px) {
+  //Blog page goes to one-column
   .blog-flex-container {
     flex-direction: column;
     width: 95%;
@@ -31,6 +34,7 @@
   }
 
   .blog-aside-content {
+    //Blog purple sidebar has a 2-column horizontal layout for a bit
     flex-direction: row;
     justify-content: space-between;
     padding: 1.5rem;
@@ -45,6 +49,7 @@
   }
 
   .blog-side-image {
+    //Sidebar image gets smaller but still overlaps the header
     width: 50%;
     position: relative;
     right: -45%;
@@ -71,6 +76,7 @@
 
 @media (max-width: 950px) {
   .whats-new-article {
+    //Icons on index.html's What's New section sit centred atop each heading, saving some horizontal space
     padding: 0 1rem;
     margin-top: 4rem;
     text-align: center;
@@ -103,6 +109,7 @@
 }
 
 @media (max-width: 800px) {
+  //About us section goes from a 2x2 grid to 1-column centred
   .about-us-section {
     background: linear-gradient(to bottom, #03697c 4%, #474bb5 4%, #474bb5 100%);
   }
@@ -117,6 +124,8 @@
     margin: 0 auto;
     width: 60%;
   }
+
+  //These images are purely decorative anyway so let's drop the last one to save some bandwidth
 
   .about-us-image-right {
     display: none;
@@ -136,6 +145,8 @@
     align-self: center;
   }
 
+  //Blog sidebar image is purely decorative, so let's drop it to save bandwidth on mobile
+
   .blog-side-image {
     display: none;
   }
@@ -146,6 +157,7 @@
   }
 
   .blog-aside-content {
+    //Blog sidebar goes from 2-col to one-column centred
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -163,6 +175,7 @@
 }
 
 @media (max-width: 768px) {
+  //Tighten up that header at smaller sizes
   .header-image-box {
     width: 20rem;
     margin: 0 auto;
@@ -180,6 +193,7 @@
   }
 
   .contact-flex-container {
+    //Contact page goes from 2-column to 1-column centred
     flex-wrap: wrap;
   }
 
@@ -205,6 +219,7 @@
 
 @media (max-width: 650px) {
   .whats-new-article {
+    //What's New section goes from 2x2 grid to 1-column centred
     flex-basis: 100%;
   }
 
@@ -223,6 +238,7 @@
 }
 
 @media (max-width: 500px) {
+  //This is all switching our nav bar to a hamburger menu
   .menu-icon {
     display: block;
     position: fixed;
@@ -262,6 +278,7 @@
     margin: 0;
   }
 
+  //Drop the last instagram gallery image; that section goes from 3-column to 2-column
   .gallery-img:last-of-type {
     display: none;
   }
@@ -272,6 +289,7 @@
 }
 
 @media (max-width: 450px) {
+  //Last one! Shrink the main header so it fits on phones down to 300px wide
   h1 {
     font-size: 3.8rem;
     margin: 3rem 0 3rem;
@@ -279,6 +297,7 @@
   }
 
   .comment-wrap {
+    //Blog comments are getting tight, so stack the avatar above the comment text
     flex-direction: column;
     align-items: flex-start;
   }

@@ -48,15 +48,18 @@ label {
   transition: all 0.3s ease;
 }
 
+//Our form labels are close to the box, like a placeholder, per the design
 .form-input-block label {
   transform: translateY(-70px);
 }
 
+//When typing in a field the label scoots up out of the way but stays visible for accessibility
 .form-input-block input:focus + label {
   transform: translateY(-100px);
   color: $bright-aqua;
 }
 
+//If the field has been filled with valid input the label disappears
 .form-input-block input:valid + label,
 .form-message-block textarea:valid + label {
   opacity: 0;
@@ -97,15 +100,17 @@ textarea {
 
   background-color: $bright-aqua;
   color: $french-blue;
+
+  transition: all 0.3s ease;
 }
 
 .form-submit-button:hover,
 .form-submit-button:focus {
   text-decoration: none;
-  color: $pale-grey;
+  color: $bright-aqua;
   background-color: $darkish-blue;
 }
 
 .form-submit-button:active {
-  color: $bright-aqua;
+  color: $pale-grey;
 }
