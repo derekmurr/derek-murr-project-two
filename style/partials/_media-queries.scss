@@ -256,7 +256,8 @@
     z-index: 999;
   }
 
-  .menu-icon:hover {
+  .menu-icon:hover,
+  .menu-icon:focus {
     color: $bright-aqua;
   }
 
@@ -302,6 +303,10 @@
   
   .gallery-img {
     flex-basis: 48%;
+  }
+
+  footer p {
+    font-size: 0.8rem;
   }
 }
 

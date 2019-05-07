@@ -1161,7 +1161,8 @@ textarea:focus {
     text-align: right;
     z-index: 999;
   }
-  .menu-icon:hover {
+  .menu-icon:hover,
+  .menu-icon:focus {
     color: #08fded;
   }
   .menu-icon:active {
@@ -1204,6 +1205,9 @@ textarea:focus {
   .gallery-img {
     -ms-flex-preferred-size: 48%;
         flex-basis: 48%;
+  }
+  footer p {
+    font-size: 0.8rem;
   }
 }
 
