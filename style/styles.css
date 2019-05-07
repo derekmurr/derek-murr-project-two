@@ -840,7 +840,7 @@ button {
 }
 
 label {
-  margin-left: 20px;
+  padding-left: 20px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -1017,6 +1017,9 @@ textarea:focus {
     -webkit-box-shadow: 10px 10px 0 0 #08fded;
             box-shadow: 10px 10px 0 0 #08fded;
   }
+  .contact-form {
+    padding: 60px 20px 15px;
+  }
   .form-input-block {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -1107,6 +1110,7 @@ textarea:focus {
     text-align: center;
     -ms-flex-negative: 0;
         flex-shrink: 0;
+    margin-right: 0;
   }
   .social-nav ul {
     -webkit-box-pack: center;
@@ -1217,6 +1221,9 @@ textarea:focus {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+  .comment-avatar {
+    margin-right: 0;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -103,6 +103,10 @@
     box-shadow: 10px 10px 0 0 $bright-aqua;
   }
 
+  .contact-form {
+    padding: 60px 20px 15px
+  }
+
   .form-input-block {
     flex-basis: 100%;
   }
@@ -201,6 +205,7 @@
     flex-basis: 100%;
     text-align: center;
     flex-shrink: 0;
+    margin-right: 0;
   }
 
   .social-nav ul {
@@ -312,5 +317,9 @@
     //Blog comments are getting tight, so stack the avatar above the comment text
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .comment-avatar {
+    margin-right: 0;
   }
 }
